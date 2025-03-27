@@ -1,0 +1,127 @@
+/* Style de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Mise en page du panneau d'administration */
+.admin-panel {
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+/* Contenu principal */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  top: 0;          /* La place en haut de la page */
+    left: 0;         /* Aligne à gauche */
+    width: 100%; 
+}
+
+.header {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Liste des réservations */
+.reservation-list {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.reservation-list h2 {
+  margin-bottom: 15px;
+}
+
+.reservation-list ul {
+  list-style: none;
+}
+
+/* Formulaire de nouvelle réservation */
+.new-reservation-form {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.new-reservation-form h2 {
+  margin-bottom: 15px;
+}
+
+.new-reservation-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-reservation-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.new-reservation-form button {
+  padding: 10px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-reservation-form button:hover {
+  background-color: #004a99;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}

@@ -1,0 +1,296 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    
+    /* max-width: 50px; */
+    width: 235px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* 
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.company-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+}
+
+.company-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.company-info {
+    padding: 1rem;
+}
+
+.company-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.company-details {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+} */
+
+/* .btn-reserve {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reserve:hover {
+    background-color: #2980b9;
+} */
+nav ul li a i {
+    margin-right: 5px;
+}
+/* h1{
+    color: #f4f4f4;
+}
+.hero {
+ 
+    /* align-items: center;
+    text-align: center; */
+    /* color: white;
+} */
+
+.hero-content h1 {
+    /* font-size: 3rem;
+    margin-bottom: 1rem; */
+}
+
+.hero-content p {
+    /* font-size: 1.2rem;
+    margin-bottom: 2rem; */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.companies {
+    padding: 4rem 0;
+}
+
+.companies h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.company-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+}
+
+.company-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.company-info {
+    padding: 1rem;
+}
+
+.company-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #f4f4f4;
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+} */
+header {
+    color: white;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    position: fixed; /* Fixe la barre de navigation */
+    top: 0;          /* La place en haut de la page */
+    left: 0;         /* Aligne à gauche */
+    width: 100%;     /* Occupe toute la largeur de la page */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 600;
+    display: block;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+@media screen and (max-width: 938px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #3498db;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .burger-menu {
+        position: relative;
+        display: block;
+        right: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+}
+    
+    /* header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-links li {
+        margin-left: 1.5rem;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: white;
+    } */

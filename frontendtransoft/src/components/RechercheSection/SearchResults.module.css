@@ -1,0 +1,20 @@
+/* Search Results styles */
+.searchResults {
+    text-align: center;
+    margin-top: 50px;
+    padding: 2rem;
+  }
+  
+  .searchResults h2 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .resultCardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,268 @@
+/* Variables de couleurs */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+}
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.header {
+  color: white;
+  padding: 10px 0;
+}
+.logo{
+  /* position: relative; */
+  top: 5px;
+}
+
+span{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  bottom: 15px;
+  font-size: 1.5em;
+}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    font-weight: 600;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  nav ul li a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .burgerMenu {
+    display: none;
+  }
+  
+  .burgerMenu.active {
+    display: flex;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  
+  /* Style pour le menu deroulant  */
+  .profileIcon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: #2ecc71;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+  }
+
+  /* Style pour le menu deroulant  */
+  
+  .icon {
+    
+    font-size: 20px;
+  cursor: pointer;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: #3498db;
+    border: 1px solid none;
+    border-radius: 11px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    z-index: 10;
+    transition: all 2s ease;
+  }
+  
+  .dropdownItem {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dropdownItem:hover {
+    background-color:#2f678d;
+    color:#2ecc71;
+  }
+  
+
+/* .burger-menu {
+    display: none;
+    cursor: pointer;
+  } */
+
+/* .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  } */
+
+/* .nav-links {
+    display: flex;
+    list-style: none;
+    transition: transform 0.5s ease-in;
+  } */
+@media screen and (max-width: 938px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  .burgerMenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .active {
+    display: flex;
+  }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        padding: 5px;
+        top: 30px;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    /* reglage de mon menuBurger */
+    
+    /* .nav-links {
+      position: absolute;
+      top: 65px;
+      right: 0;
+      height: 50vh;
+      background-color: #3498db;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      transform: translateX(100%); /* Cache le menu 
+      transition: transform 0.3s ease-in-out;
+    } */
+    .nav-links.active {
+      transform: translateX(0); /* Affiche le menu lorsqu'il est actif */
+    }
+  
+    .nav-links li {
+      position: relative;
+      padding: 5px;  
+      margin: 10px 0;
+    }
+  
+    .nav-links a {
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .nav-links a:hover {
+      color: var(--secondary-color);
+    }
+  
+    .burger-menu {
+      display: block; /* Affiche le burger sur mobile */
+      cursor: pointer;
+    }
+  
+    .burger-menu .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  
+    /* Animation pour les barres du burger */
+    .burgerMenu.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(15px, 6px);
+    }
+  
+    .burgerMenu.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .burgerMenu.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-28px, 20px);
+    }
+    nav {
+      flex-wrap: wrap;
+    }
+  
+  }
+  
+ 

@@ -1,0 +1,109 @@
+.resultCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  max-width: 350px; /* Empêche les cartes d'être trop larges */
+  min-height: 250px; /* Assure une taille minimale pour éviter les variations */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resultCard:hover {
+  transform: scale(1.02);
+}
+
+.companyName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #3498db;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 14px;
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #396E77;
+}
+
+.schedule {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.schedule p {
+  font-size: 1.2rem;  
+  
+  color: #333;  
+  margin-bottom: 5px;  
+}
+
+.priceSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  width: 100%;
+  margin-top: auto; /* Assure que cette section reste en bas de la carte */
+}
+
+.priceSection p {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.reserveButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.reserveButton:hover {
+  background: #2c5661;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .resultCard {
+    max-width: 100%; /* Permet aux cartes de s'adapter sur mobile */
+  }
+
+ 
+
+  .priceSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reserveButton {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+ 

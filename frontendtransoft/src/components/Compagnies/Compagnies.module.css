@@ -1,0 +1,92 @@
+.Companies {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .OurPartners {
+    margin-bottom: 2rem;
+  }
+  
+  .nosCompagnies {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    
+  }
+  
+  
+  
+  .companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Grille responsive */
+    gap: 2rem;
+    
+  }
+  
+  .compagniesGrid {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .compagniesGrid:hover {
+    transform: translateY(-5px);
+  }
+  
+  .compagniesGrid img {
+    width: 100%; /* Rendre l'image responsive */
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .compagnyInfo {
+    padding: 1rem;
+  }
+  
+  .compagnyInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #3498db;
+  }
+  
+  .compagnyInfo p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .nosCompagnies {
+      font-size: 2rem; /* Réduction de la taille de la police sur les petits écrans */
+    }
+  
+    .compagnyInfo h3 {
+      font-size: 1.3rem;
+    }
+  
+    .compagnyInfo p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .nosCompagnies {
+      font-size: 1.8rem; /* Encore plus petit pour les très petits écrans */
+    }
+  
+    .companies {
+      grid-template-columns: 1fr; /* Une seule colonne sur les très petits écrans */
+    }
+  
+    .compagnyInfo h3 {
+      font-size: 1.2rem;
+    }
+  
+    .compagnyInfo p {
+      font-size: 0.85rem;
+    }
+  }
+  
