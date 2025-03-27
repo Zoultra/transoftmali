@@ -1,0 +1,397 @@
+/* Variables de couleurs */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+}
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Grille des compagnies */
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.companyCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.companyCard:hover {
+  transform: translateY(-5px);
+}
+
+.companyCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.companyInfo {
+  padding: 1rem;
+}
+
+.companyInfo h3 {
+  margin-bottom: 0.5rem;
+}
+
+.btn-reserve {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reserve:hover {
+  background-color: #2980b9;
+}
+
+/* Autres styles */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+.ourPartners{
+  padding:65px ;
+  text-align: center;
+  background-color: #fff;
+}
+/* Style de la barre de navigation */
+header {
+  color: white;
+  padding: 10px 0;
+}
+.logo{
+  position: relative;
+  top: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  font-family: 'Poppins', sans-serif;
+  padding: 15px;
+  font-weight: 600;
+  display: block;
+  transition: background-color 0.3s;
+}
+nav ul li a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.containerB {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 35px;
+}
+
+/* .titreReservation {
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 220px;
+  transform: translateX(35vw);
+  /* position: relative;
+  top: 26px; 
+} */
+
+.reservation-form {
+  display: grid;
+  gap: 15px;
+  position: relative;
+  top: 35px;
+  
+}
+
+/* transform: translateX(4vw); */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+input, select {
+  width: 450px; 
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0077B5;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in;
+}
+/* Partie css de Reservation */
+.containerB {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 26px;
+}
+
+.reservation-form {
+  display: grid;
+  gap: 15px;
+  position: relative;
+  top: 35px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+input, select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Fin Reservation */
+
+/* Partie Responsive BurgerMenu */
+@media screen and (max-width: 938px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      padding: 5px;
+      top: 30px;
+      left: 0;
+      right: 0;
+      background-color: var(--primary-color);
+  }
+  
+  nav ul.show {
+      display: flex;
+  }
+  /* reglage de mon menuBurger */
+  
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 50vh;
+    background-color: #3498db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(100%); /* Cache le menu */
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-links.active {
+    transform: translateX(0); /* Affiche le menu lorsqu'il est actif */
+  }
+
+  .nav-links li {
+    position: relative;
+    padding: 5px;  
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary-color);
+  }
+
+  .burger-menu {
+    display: block; /* Affiche le burger sur mobile */
+    cursor: pointer;
+  }
+
+  .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  /* Animation pour les barres du burger */
+  .burger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/*   
+  .burger-menu .bar {
+    transition: 0.4s;
+  }
+  
+  .burger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .burger-menu {
+    position: relative;
+    display: block;
+    right: 15px;
+} */

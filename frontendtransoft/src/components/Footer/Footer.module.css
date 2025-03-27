@@ -1,0 +1,34 @@
+/* Variables de couleurs */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+  }
+  
+  /* Réinitialisation */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+.footer {
+    background-color: #3498db; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Prendre toute la largeur */
+    position: absolute;
+    
+    left: 0;
+  }
+  
