@@ -45,7 +45,7 @@
     type: DataTypes.STRING,
     allowNull: false, // Assure qu'un trajet ne peut pas exister sans compagnie
     references: {
-      model: "Companies",
+      model: "company",
       key: "company_id",
     },
     onUpdate: "CASCADE",
