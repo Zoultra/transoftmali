@@ -18,7 +18,7 @@
          notEmpty: { message: "La Prenom de depart ne peut pas être vide" },
        },
    },
-   lastname: {
+    lastname: {
      type: DataTypes.STRING,
      allowNull: false,
      validate: {
@@ -37,7 +37,7 @@
     type: DataTypes.UUID,
     allowNull: false,
     references: {
-        model: 'Reservations',
+        model: 'reservations',
         key: 'id'
     }
 }
