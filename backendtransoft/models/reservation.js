@@ -19,7 +19,7 @@ import Route from './routes.js';
        },
    },
    route_id : {
-     type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
      allowNull: false,
      validate: {
          notEmpty: { message: "Le trajet ne peut pas être vide" },
