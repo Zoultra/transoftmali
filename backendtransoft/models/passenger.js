@@ -26,7 +26,7 @@
        },
    },
    phone: {
-     type: DataTypes.NUMBER,
+     type: DataTypes.STRING,
      allowNull: false,
      validate: {
          notEmpty: { message: "Le numéro de téléphone ne peut pas être vide" },
