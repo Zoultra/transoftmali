@@ -26,7 +26,11 @@
        },
    },
    phone: {
+<<<<<<< HEAD
      type: DataTypes.NUMBER,
+=======
+     type: DataTypes.STRING,
+>>>>>>> 396e4c3f93be7ff3fe3db0942ea3a4f91bc1a8e3
      allowNull: false,
      validate: {
          notEmpty: { message: "Le numéro de téléphone ne peut pas être vide" },

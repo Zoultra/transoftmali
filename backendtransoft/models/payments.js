@@ -34,12 +34,16 @@
    
    
  },
+<<<<<<< HEAD
 
  // Configurer la relation Many-to-One
 //buses.belongsTo(Buses, {
   //  foreignKey: 'bus_id',
   //  as: 'bus_id ',
 //}),
+=======
+ 
+>>>>>>> 396e4c3f93be7ff3fe3db0942ea3a4f91bc1a8e3
  
  {
      tableName: 'payments',  // Indique que la table s'appelle `users`
