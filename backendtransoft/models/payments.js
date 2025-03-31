@@ -43,7 +43,7 @@
  
  
  {
-     tableName: 'payments',  // Indique que la table s'appelle `users`
+     tableName: 'payments',  // Indique que la table s'appelle `payments`
      timestamps: true     // Sequelize ajoutera automatiquement `createdAt` et `updatedAt`
    });
  
