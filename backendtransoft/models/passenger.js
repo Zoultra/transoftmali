@@ -34,11 +34,11 @@
        },
    },
    reservation_id: {
-    type: DataTypes.UUID,
+    type: DataTypes.STRING,
     allowNull: false,
     references: {
         model: 'reservations',
-        key: 'id'
+        key: 'reservation_id'
     }
 }
    
