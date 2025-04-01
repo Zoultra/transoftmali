@@ -38,10 +38,10 @@ export default function ReservationForm() {
   
     // Construire les données à envoyer
     const reservationData = {
-      user_id: "pXf2eKZgVXy8TfGopMzSX", // Remplace par l'ID réel de l'utilisateur connecté
-      route_id: "7oBm34TnhKfdEy6wZojsr", // ID du trajet (peut-être à récupérer dynamiquement)
+      user_id: "JJ5LjRLmRuEn6hV8O94dV", // Remplace par l'ID réel de l'utilisateur connecté
+      route_id: "xAO0Gjneuq1o41nOZAzPP", // ID du trajet (peut-être à récupérer dynamiquement)
       seats_reserved: numTickets,
-      status: "pending", // Peut être "confirmed" après paiement
+      status: "En attente", // Peut être "confirmed" après paiement
       passengers: passengers.map((p) => ({
         firstname: p.firstName,
         lastname: p.lastName,
