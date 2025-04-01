@@ -41,7 +41,8 @@ interface Reservation {
 
 
 
-const API_URL = "http://localhost:3001/api-transoft/reservation"; // ✅ URL API
+//const API_URL = "http://localhost:3001/api-transoft/reservation"; // ✅ URL API
+const API_URL = "https://transoftmali.onrender.com/api-transoft/reservation"; // ✅ URL API
 
 const Reservations: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');

@@ -33,6 +33,7 @@
     type: DataTypes.STRING,
     allowNull: true,
     references: {
+      model: "Companies",
       model: "company",
       key: "company_id",
     },

@@ -1,4 +1,4 @@
-// syncDatabase.js
+ // syncDatabase.js
 import sequelize from './database.js';
 import '../models/associations.js'; // Chargez les associations
 

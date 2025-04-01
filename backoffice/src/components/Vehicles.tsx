@@ -17,8 +17,11 @@ interface Company {
 }
 
 // 📌 URL de l'API
-const API_BUSES = "http://localhost:3001/api-transoft/buses";
-const API_COMPANIES = "http://localhost:3001/api-transoft/company";
+//const API_BUSES = "http://localhost:3001/api-transoft/buses";
+//const API_COMPANIES = "http://localhost:3001/api-transoft/company";
+
+const API_BUSES = "https://transoftmali.onrender.com/api-transoft/buses";
+const API_COMPANIES = "https://transoftmali.onrender.com/api-transoft/company";
 
 const Buses = () => {
   const [buses, setBuses] = useState<Bus[]>([]);
