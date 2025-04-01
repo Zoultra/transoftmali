@@ -35,18 +35,24 @@
    
  },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7d51d18fc347c6dbeb8197de89f397909ca02309
 
  // Configurer la relation Many-to-One
 //buses.belongsTo(Buses, {
   //  foreignKey: 'bus_id',
   //  as: 'bus_id ',
 //}),
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7d51d18fc347c6dbeb8197de89f397909ca02309
  
 >>>>>>> 396e4c3f93be7ff3fe3db0942ea3a4f91bc1a8e3
  
  {
-     tableName: 'payments',  // Indique que la table s'appelle `users`
+     tableName: 'payments',  // Indique que la table s'appelle `payments`
      timestamps: true     // Sequelize ajoutera automatiquement `createdAt` et `updatedAt`
    });
  

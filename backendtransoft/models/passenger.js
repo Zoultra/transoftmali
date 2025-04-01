@@ -18,7 +18,7 @@
          notEmpty: { message: "La Prenom de depart ne peut pas être vide" },
        },
    },
-   lastname: {
+    lastname: {
      type: DataTypes.STRING,
      allowNull: false,
      validate: {
@@ -27,8 +27,12 @@
    },
    phone: {
 <<<<<<< HEAD
+<<<<<<< HEAD
      type: DataTypes.NUMBER,
 =======
+=======
+     type: DataTypes.NUMBER,
+>>>>>>> 7d51d18fc347c6dbeb8197de89f397909ca02309
      type: DataTypes.STRING,
 >>>>>>> 396e4c3f93be7ff3fe3db0942ea3a4f91bc1a8e3
      allowNull: false,
@@ -37,11 +41,11 @@
        },
    },
    reservation_id: {
-    type: DataTypes.UUID,
+    type: DataTypes.STRING,
     allowNull: false,
     references: {
-        model: 'Reservations',
-        key: 'id'
+        model: 'reservations',
+        key: 'reservation_id'
     }
 }
    
