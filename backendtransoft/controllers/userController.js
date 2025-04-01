@@ -95,6 +95,7 @@ export const loginUser = async (req, res) => {
     user.token = token
     res.status(200).json({ message: 'Connexion réussie', user, token });
     console.log(token)
+    console.log("TOKEN_KEY:", process.env.TOKEN_KEY);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Erreur du serveur', error });
