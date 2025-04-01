@@ -15,8 +15,8 @@ interface User {
 }
 
 // 📌 URL de l'API
-const API_URL = "http://localhost:3001/api-transoft/users";
-
+//const API_URL = "http://localhost:3001/api-transoft/users"; 
+const API_URL = "https://transoftmali.onrender.com/api-transoft/users";
 const Users = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [searchTerm, setSearchTerm] = useState("");

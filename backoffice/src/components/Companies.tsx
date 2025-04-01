@@ -12,8 +12,8 @@ interface Company {
 }
 
 // 📌 URL de l'API
-const API_URL = "http://localhost:3001/api-transoft/company";
-
+// const API_URL = "http://localhost:3001/api-transoft/company";
+const API_URL = "https://transoftmali.onrender.com/api-transoft/company";
 const Companies = () => {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
