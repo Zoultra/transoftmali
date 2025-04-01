@@ -7,6 +7,9 @@ function SearchResults() {
    
   const API_URL = "http://localhost:3001/api-transoft/routes";
   const API_URL_COMPANY = "http://localhost:3001/api-transoft/company";
+
+  const API_URL_RENDER = "https://transoftmali.onrender.com/api-transoft/routes";
+  const API_URL_COMPANY_RENDER = "https://transoftmali.onrender.com/api-transoft/company";
   
   const [trajets, setTrajets] = useState([]);
   const [companies, setCompanies] = useState([]);
@@ -16,7 +19,7 @@ function SearchResults() {
   
   const fetchTrajets = async () => {
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch(API_URL_RENDER);
       if (!response.ok) {
         throw new Error("Erreur lors de la récupération des Trajets");
       }
@@ -31,7 +34,7 @@ function SearchResults() {
 
   const fetchCompanies = async () => {
     try {
-      const response = await fetch(API_URL_COMPANY);
+      const response = await fetch(API_URL_COMPANY_RENDER);
       if (!response.ok) {
         throw new Error("Erreur lors de la récupération des Compagnies");
       }
