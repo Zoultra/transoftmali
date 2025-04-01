@@ -50,7 +50,7 @@ export default function ReservationForm() {
     };
   
     try {
-      const response = await fetch("http://localhost:3001/api-transoft/reservation", {
+      const response = await fetch("https://transoftmali.onrender.com/api-transoft/reservation", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
