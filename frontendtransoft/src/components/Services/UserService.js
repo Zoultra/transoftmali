@@ -3,8 +3,8 @@ import axios from 'axios';
 const API_URL = "http://localhost:3001/api-transoft/users";
 const API_URL_LOGIN = "http://localhost:3001/api-transoft/users/login";
 
-const API_URL_RENDER = "http://transoftmali.onrender.com/api-transoft/users";
-const API_URL_LOGIN_RENDER = "http://transoftmali.onrender.com/api-transoft/users/login";
+const API_URL_RENDER = "https://transoftmali.onrender.com/api-transoft/users";
+const API_URL_LOGIN_RENDER = "https://transoftmali.onrender.com/api-transoft/users/login";
  
 class UserService {
     getUsers() {
