@@ -15,23 +15,21 @@ export const AuthProvider = ({ children }) => {
    
   const navigate = useNavigate();
   // Charger le token JWT du localStorage au montage
+   
+
   useEffect(() => {
     const token = localStorage.getItem('token');
-    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const user = localStorage.getItem('user'); // Stocke le téléphone ou l'ID utilisateur
+    const user = localStorage.getItem('user');
     
-    if (token && isLoggedIn) {
-      setAuth({ 
-        message: '',
-        error: '',
-        isLoggedIn: true,
+    if (token) {
+      setAuth((prevAuth) => ({
+        ...prevAuth,
         token,
-        user, // Remet l'utilisateur connecté
-      });
+        user: user ? JSON.parse(user) : null,
+        isLoggedIn: true
+      }));
     }
-  }, []);  // ✅ Utiliser un tableau vide [] pour éviter les boucles infinies
-
-
+  }, []);
 
   const login = async (telephone,password) => {
  

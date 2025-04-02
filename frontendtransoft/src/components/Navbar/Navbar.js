@@ -50,27 +50,23 @@ function Navbar() {
         
            
 
-      {auth.token ? (
-      auth.user &&  
-        
-        <li>
-              <div className={styles.profileIcon} onClick={toggleDropdown} ref={dropdownRef}>
-                {/* Icône utilisateur */}
-                <FaUser className={styles.icon} /> {/* Icône utilisateur */}
-                
-                {/* Menu déroulant */}
-                {dropdownOpen && (
-                  <div className={styles.dropdownMenu}>
-                    <button className={styles.dropdownItem}>Voir mon compte</button>
-                    <button className={styles.dropdownItem}>Modifier mon compte</button>
-                    <button onClick={() => logout()} className={styles.dropdownItem}>Se déconnecter</button>
-                  </div>
-                )}
-              </div>
-            </li>
-      ) : (
-        <li><NavLink to="/connexion">Se connecter</NavLink></li>
+            {auth.isLoggedIn ? (
+  <li>
+    <div className={styles.profileIcon} onClick={toggleDropdown} ref={dropdownRef}>
+      <FaUser className={styles.icon} />
+      {dropdownOpen && (
+        <div className={styles.dropdownMenu}>
+          <button className={styles.dropdownItem}>Voir mon compte</button>
+          <button className={styles.dropdownItem}>Modifier mon compte</button>
+          <button onClick={() => logout()} className={styles.dropdownItem}>Se déconnecter</button>
+        </div>
       )}
+    </div>
+  </li>
+) : (
+  <li><NavLink to="/connexion">Se connecter</NavLink></li>
+)}
+
           </ul>
           
           {/* Utilisez styles.burgerMenu pour CSS Modules */}
