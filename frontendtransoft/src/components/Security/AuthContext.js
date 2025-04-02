@@ -50,6 +50,7 @@ export const AuthProvider = ({ children }) => {
       // Enregistrement du token dans localStorage
       localStorage.setItem('token', token);
       localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('user', JSON.stringify(response.data.user));
       
     //  setActiveForm("reservation");
       navigate('/Accueil',  { state: { successMessage: "Bienvenue, vous êtes connecté !" } });
@@ -67,7 +68,8 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem('token');
-    setAuth({ token: null, user: null });
+    localStorage.removeItem('user');  
+    setAuth({ message: '', error: '', isLoggedIn: false, token: null, user: null });
   };
 
   return (
