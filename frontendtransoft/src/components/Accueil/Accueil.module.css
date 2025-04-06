@@ -50,7 +50,7 @@ body {
     display: inline-block;
     background-color: var(--secondary-color);
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5em;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -59,4 +59,16 @@ body {
   
   .btn:hover {
     background-color: #27ae60;
+  }
+  @media screen and (max-width: 980px) {
+    .btn{
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
   }

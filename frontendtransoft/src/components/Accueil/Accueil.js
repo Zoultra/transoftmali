@@ -29,11 +29,11 @@ function Accueil() {
               Voyagez en toute simplicité avec TRANSOFT
             </h1>
             <p>
-              Réservez vos billets d'autocar en quelques clics auprès des
+              Réservez vos billets d'autobus en quelques clics auprès des
               meilleures compagnies de transport
             </p>
-            <a href="#companies" className={styles.btn}>
-              Voir nos compagnies partenaires
+            <a href="#recherche" className={styles.btn}>
+              Trouvez votre voyage pour réservez dès maintenant 
             </a>
           </div>
         </div>

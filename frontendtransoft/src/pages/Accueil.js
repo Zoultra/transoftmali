@@ -5,7 +5,7 @@ import Companies from "../components/Compagnies/Companies";
 import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
 import SearchResults from "../components/RechercheSection/SearchResults.js"
-import RechercheSection from "../components/RechercheSection/Recherche";
+import Recherche from "../components/RechercheSection/Recherche";
 
 
 // import FormInscription from "../components/FormInscription";
@@ -14,6 +14,9 @@ const AccueilSection = () => {
     <div>
       <Navbar />
       <Accueil />
+      <Recherche />
+      <SearchResults />
+      <Features />
       <Companies />
       <Features />
       <Footer />

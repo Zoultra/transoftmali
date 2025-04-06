@@ -35,14 +35,18 @@ function Navbar() {
       <div className={styles.container}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <img src="img/TranSoftLogo.png" alt="Logo" width="65px" height="45px" />
-            TRANSOFT
+          <img
+                src="img/Frame 2.png"
+                alt="Logo"
+                width="155px"
+                height="45px"
+              />
           </div>
           
           {/* Utilisez styles.navLinks pour CSS Modules */}
           <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
             <li><NavLink to="/accueil">Accueil</NavLink></li>
-            <li><NavLink to="/reservation">Réservation</NavLink></li>
+            {/* <li><NavLink to="/reservation">Réservation</NavLink></li> */}
            {/*  <li><NavLink to="/recherche">Rechercher un Voyage</NavLink></li> */}
             <li><NavLink to="/contact">Nous-Contactez</NavLink></li>
             <li><NavLink to="/about">A propos</NavLink></li>

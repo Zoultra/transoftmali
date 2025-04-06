@@ -16,10 +16,10 @@ const NousContacter = () => {
           </a>
         </p>
         <p>
-          <strong>Téléphone :</strong> +223 00 00 00 00
+          <strong>Téléphone :</strong> +223 76 10 59 89 / +223 67 89 49 90
         </p>
         <p>
-          <strong>Adresse :</strong> Rue 123, Bamako, Mali
+          <strong>Adresse :</strong> Faladie Rue 123, Bamako, Mali
         </p>
       </div>
       <footer className={styles.footerContact}>
