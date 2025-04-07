@@ -5,7 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
- 
+ // Ajoutez ce code pour ignorer ces erreurs spécifiques
+window.addEventListener('error', e => {
+  if (e.message === 'ResizeObserver loop completed with undelivered notifications') {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }
+});
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

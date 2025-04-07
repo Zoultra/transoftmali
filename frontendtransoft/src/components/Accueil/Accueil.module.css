@@ -60,15 +60,49 @@ body {
   .btn:hover {
     background-color: #27ae60;
   }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 480px) {
     .btn{
       display: inline-block;
       background-color: var(--secondary-color);
       color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 5px;
+      padding: 0.8rem ;
+      margin: 1.5em;
+      border-radius: 9px;
       text-decoration: none;
       font-weight: 600;
       transition: background-color 0.3s ease;
+    }
+      
+    .heroTitle {
+    
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    } 
+    .heroContent p {
+      font-size: 1rem;
+      margin: 1rem;
+    }
+  }
+  @media screen and (max-width: 376px) {
+    .btn{
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 0.8rem ;
+      margin: 2.5em ;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+      
+    .heroTitle {
+    
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    } 
+    .heroContent p {
+      font-size: 1rem;
+      margin: 0 2.5rem;
     }
   }

@@ -16,9 +16,9 @@ const AccueilSection = () => {
       <Accueil />
       <Recherche />
       <SearchResults />
-      <Features />
       <Companies />
       <Features />
+      
       <Footer />
     </div>
   );

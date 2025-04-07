@@ -81,6 +81,7 @@
   
   @media (max-width: 480px) {
     .title {
+      margin-top: 2.5rem;
       font-size: 1.5rem;
     }
   

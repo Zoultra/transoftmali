@@ -74,7 +74,7 @@
   
   @media screen and (max-width: 480px) {
     .nosCompagnies {
-      font-size: 1.8rem; /* Encore plus petit pour les très petits écrans */
+      font-size: 1.5rem; /* Encore plus petit pour les très petits écrans */
     }
   
     .companies {
@@ -87,6 +87,36 @@
   
     .compagnyInfo p {
       font-size: 0.85rem;
+    }
+    .compagniesGrid{
+      width: 85%; /* Rendre l'image responsive */
+      height: 300px;
+      margin: 0 auto;
+      /* object-fit: cover; */
+    }
+  }
+  
+  @media screen and (max-width: 376px) {
+    .nosCompagnies {
+      font-size: 1.5rem; /* Encore plus petit pour les très petits écrans */
+    }
+  
+    .companies {
+      grid-template-columns: 1fr; /* Une seule colonne sur les très petits écrans */
+    }
+  
+    .compagnyInfo h3 {
+      font-size: 1.2rem;
+    }
+  
+    .compagnyInfo p {
+      font-size: 0.85rem;
+    }
+    .compagniesGrid{
+      width: 80%; /* Rendre l'image responsive */
+      height: 300px;
+      margin: 0 auto;
+      /* object-fit: cover; */
     }
   }
   
