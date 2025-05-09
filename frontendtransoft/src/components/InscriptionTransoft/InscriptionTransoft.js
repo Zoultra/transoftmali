@@ -57,12 +57,12 @@ const InscriptionTransoft = () => {
             <div className={styles.logo}>
             <NavLink styles='color: white;' to="/accueil">
               <img
-                src="img/TranSoftLogo.png"
+                src="img/Frame 2.png"
                 alt="Logo"
-                width="65px"
+                width="150px"
                 height="45px"
               />
-              TRANSOFT
+              {/* TRANSOFT */}
               </NavLink>
             </div>
           </nav>
@@ -128,13 +128,7 @@ const InscriptionTransoft = () => {
                 Pas encore de compte ? Inscrivez-vous
               </a>
             </div>
-            <div className={styles.toggleForm}>
-              <a href="http://localhost:5173/login" target="_blank" rel="noopener noreferrer" >
-           
-              ACCÈS RESTREINT
- 
-              </a>
-            </div>
+
           </div>
         )}
 

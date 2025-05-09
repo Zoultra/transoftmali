@@ -10,8 +10,8 @@ import Inscription from "./pages/Inscription";
 import Accueil from "./pages/Accueil";
 import { AuthProvider } from '../src/components/Security/AuthContext';
 import ReservationForm from "./components/ReservationForm/ReservationForm";
-import Reserver from "./components/ReservationForm/Reserver";
-
+// import Reserver from "./components/ReservationForm/Reserver";
+import Acheter from "./pages/Acheter"
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
         <Route>
           {/* <Inscription /> */}
           <Route path="/reserver" element={<ReservationForm />} />
-          <Route path="/achat" element={<Reserver />} />
+          <Route path="/achat" element={<Acheter />} />
           <Route path="/connexion" element={<Inscription />} />
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/recherche" element={<Recherche />} />

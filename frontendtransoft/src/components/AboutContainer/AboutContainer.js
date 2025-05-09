@@ -10,10 +10,8 @@ const AboutContainer = () => {
         innovante qui révolutionne la réservation de billets de voyage en
         autocar à travers le Mali. Nous collaborons avec un vaste réseau de
         compagnies de transport pour offrir une solution moderne et efficace à
-        la gestion des réservations.
-      </p>
-      <p>
-        Notre mission est de{" "}
+        la gestion des réservations. 
+         Notre mission est de{" "}
         <span className={styles.highlight}>simplifier la gestion des voyages</span> pour les passagers tout en offrant aux compagnies une{" "}
         <span className={styles.highlight}>opportunité unique</span> d’accroître leur visibilité, d’améliorer leur productivité et de garantir un service client exceptionnel.
       </p>
@@ -46,7 +44,9 @@ const AboutContainer = () => {
             ainsi offrir une assistance client de qualité, en toute simplicité.
           </p>
         </div>
-        <div className={styles.benefitItem}>
+        <div className={styles.benefitItem} style={{
+          marginBottom: "20px",
+        }}>
           <h3>4. Réduisez vos coûts opérationnels</h3>
           <p>
             En digitalisant la vente des billets et la gestion des réservations,

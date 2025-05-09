@@ -12,14 +12,17 @@
   .title {
     font-size: 2rem;
     color: #3498db;
-    margin-bottom: 20px;
+    margin: 20px;
     text-align: center;
     font-weight: bold;
+
   }
   
   .highlight {
     color: #2ecc71;
     font-weight: bold;
+    top: 1px;
+    font-size: 18px;
   }
   
   .benefits {
@@ -78,6 +81,7 @@
   
   @media (max-width: 480px) {
     .title {
+      margin-top: 2.5rem;
       font-size: 1.5rem;
     }
   
