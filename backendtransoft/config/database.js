@@ -4,8 +4,8 @@ import dotenv from "dotenv";
 dotenv.config(); // Charger les variables d’environnement
 
 // Création de l'instance Sequelize
-const sequelize = process.env.DATABASE_URL
-  ? new Sequelize(process.env.DATABASE_URL, {
+const sequelize = process.env.DATABASE_URL_PROD
+  ? new Sequelize(process.env.DATABASE_URL_PROD, {
       dialect: "postgres",
       dialectOptions: {
         ssl: {
