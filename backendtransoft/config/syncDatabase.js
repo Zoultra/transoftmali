@@ -6,11 +6,11 @@ const syncDatabase = async () => {
     await sequelize.authenticate();
     console.log('✅ Connexion à la base réussie');
 
-    await sequelize.sync({ alter: true }); // ✅ SAFE POUR PROD
+    await sequelize.sync({ alter: true }); // ✅ BOB POUR PROD
     console.log('✅ Tables synchronisées avec succès');
 
   } catch (error) {
-    console.error('❌ Erreur de synchronisation :', error);
+    console.error(' Erreur de synchronisation :', error);
   }
 };
 
