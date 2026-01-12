@@ -1,7 +1,7 @@
 // app.js
 import express, { json } from 'express';
 import dotenv from 'dotenv';
-import { connectDB } from './config/database.js';
+
 import cors from 'cors'; // Importation de CORS
 import jwt from 'jsonwebtoken';
 
